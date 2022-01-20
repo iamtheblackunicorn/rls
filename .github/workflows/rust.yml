@@ -14,4 +14,4 @@ jobs:
           command: build
           args: --release --all-features
       - name: "Run executable"
-        run: "ls"
+        run: "chmod a+x rls/target/release/rls && ./rls/target/release/rls"
