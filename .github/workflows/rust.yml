@@ -2,7 +2,7 @@ on: [push]
 name: CI
 jobs:
   build_and_test:
-    name: Rust project
+    name: rls
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -12,6 +12,7 @@ jobs:
       - uses: actions-rs/cargo@v1
         with:
           command: build
-          args: --release --all-features
-      - name: "Run executable"
-        run: "chmod a+x rls/target/release/rls && ./rls/target/release/rls"
+          args: --release
+      - uses: actions-rs/cargo@v1
+        with:
+          command: run
