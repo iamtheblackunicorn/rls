@@ -1,0 +1,5 @@
+[package]
+name = "rls"
+author = ["Alexander Abraham"]
+version = "0.1.0"
+edition = "2021"
