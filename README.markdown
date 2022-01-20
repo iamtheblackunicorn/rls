@@ -2,6 +2,8 @@
 
 ***The popular "ls" utility re-written in Rust.*** :gear: :hammer:
 
+![GitHub CI](https://github.com/iamtheblackunicorn/rls/actions/workflows/rust.yml/badge.svg)
+
 ## About :books:
 
 I've wanted to learn some Rust for a while now, `rls` is the culmination of my first efforts into this programming language. Enjoy! ;)
